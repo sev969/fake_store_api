@@ -1,4 +1,4 @@
-import 'package:convex_bottom_bar/convex_bottom_bar.dart';
+//import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 //import 'package:fake_store_api/bloc/bloc/theme_ctrl_bloc.dart';
 import 'package:fake_store_api/ui/screens/all_goods_screen.dart';
 import 'package:fake_store_api/ui/screens/home_screen.dart';
@@ -7,7 +7,7 @@ import 'package:fake_store_api/ui/screens/shopping_cart_screen.dart';
 import 'package:fake_store_api/ui/screens/sub_category_screen.dart';
 import 'package:fake_store_api/ui/widgets/custom_nav_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+//import 'package:flutter/widgets.dart';
 //import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomePage extends StatefulWidget {
@@ -161,7 +161,7 @@ class _HomePageState extends State<HomePage> {
                     fontWeight: FontWeight.w600,
                   ),
                 ),
-                Text(
+                const Text(
                   "Copyright: sev969@gmail.com",
                   style: TextStyle(
                     fontSize: 20,

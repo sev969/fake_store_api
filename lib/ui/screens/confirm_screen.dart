@@ -3,7 +3,7 @@ import 'package:fake_store_api/bloc/bloc/load_goods_bloc.dart';
 import 'package:fake_store_api/bloc/bloc/shop_cart_bloc.dart';
 import 'package:fake_store_api/ui/widgets/custom_nav_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+//import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ConfirmSccren extends StatefulWidget {

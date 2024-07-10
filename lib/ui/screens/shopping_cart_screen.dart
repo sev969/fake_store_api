@@ -1,6 +1,6 @@
 import 'package:fake_store_api/bloc/bloc/shop_cart_bloc.dart';
 import 'package:fake_store_api/models/shopping_cart_model.dart';
-import 'package:fake_store_api/ui/screens/confirm_screen.dart';
+//import 'package:fake_store_api/ui/screens/confirm_screen.dart';
 import 'package:fake_store_api/ui/widgets/custom_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

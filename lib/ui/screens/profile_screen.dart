@@ -1,7 +1,7 @@
 import 'package:fake_store_api/bloc/bloc/theme_ctrl_bloc.dart';
 import 'package:fake_store_api/ui/widgets/custom_nav_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+//import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -20,7 +20,7 @@ class ProfileScreen extends StatelessWidget {
           children: [
             Expanded(
               child: Padding(
-                padding: EdgeInsets.all(12.0),
+                padding: const EdgeInsets.all(12.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [

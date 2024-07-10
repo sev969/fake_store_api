@@ -28,34 +28,32 @@ class AllGoodsScreen extends StatelessWidget {
             return Column(
               children: [
                 Expanded(
-                  child: Container(
-                    child: ListView.builder(
-                        itemCount: listGoods.length,
-                        itemBuilder: (context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.all(10.0),
-                            child: GestureDetector(
-                              onTap: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => SingleGoodsScreen(
-                                              goods: listGoods[index],
-                                            )));
-                              },
-                              child: Container(
-                                decoration: BoxDecoration(
-                                  border: Border.all(),
-                                  borderRadius: BorderRadius.circular(10),
-                                ),
-                                child: SubCategoryWidget(
-                                  goods: listGoods[index],
-                                ),
+                  child: ListView.builder(
+                      itemCount: listGoods.length,
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => SingleGoodsScreen(
+                                            goods: listGoods[index],
+                                          )));
+                            },
+                            child: Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              child: SubCategoryWidget(
+                                goods: listGoods[index],
                               ),
                             ),
-                          );
-                        }),
-                  ),
+                          ),
+                        );
+                      }),
                 ),
                 const CustomNavBar(),
               ],

@@ -1,9 +1,9 @@
-import 'package:convex_bottom_bar/convex_bottom_bar.dart';
+//import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:fake_store_api/bloc/bloc/load_goods_bloc.dart';
-import 'package:fake_store_api/ui/screens/all_goods_screen.dart';
-import 'package:fake_store_api/ui/screens/home_screen.dart';
-import 'package:fake_store_api/ui/screens/profile_screen.dart';
-import 'package:fake_store_api/ui/screens/shopping_cart_screen.dart';
+//import 'package:fake_store_api/ui/screens/all_goods_screen.dart';
+//import 'package:fake_store_api/ui/screens/home_screen.dart';
+//import 'package:fake_store_api/ui/screens/profile_screen.dart';
+//import 'package:fake_store_api/ui/screens/shopping_cart_screen.dart';
 import 'package:fake_store_api/ui/widgets/custom_nav_bar.dart';
 import 'package:fake_store_api/ui/widgets/single_goods_widget.dart';
 import 'package:fake_store_api/ui/widgets/sub_category_widget.dart';

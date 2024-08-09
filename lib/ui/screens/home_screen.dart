@@ -3,10 +3,7 @@ import 'package:fake_store_api/bloc/bloc/category_bloc.dart';
 import 'package:fake_store_api/constants/app_constants.dart';
 import 'package:fake_store_api/ui/screens/sub_category_screen.dart';
 import 'package:fake_store_api/ui/widgets/category_widget.dart';
-//import 'package:flutter/cupertino.dart';
-//import 'package:fake_store_api/bloc/bloc/theme_ctrl_bloc.dart';
 import 'package:flutter/material.dart';
-//import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -62,7 +59,13 @@ class HomeScreen extends StatelessWidget {
                         ),
                       );
                     },
-                    child: Image.asset("assets/images/laptop.jpg")),
+                    child: Column(children: [
+                      Image.asset("assets/images/laptop.jpg"),
+                      // const SizedBox(
+                      //   height: 5,
+                      // ),
+                      const Text("Electronics"),
+                    ])),
                 GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -76,7 +79,12 @@ class HomeScreen extends StatelessWidget {
                         ),
                       );
                     },
-                    child: Image.asset("assets/images/jewelery1.jpg")),
+                    child: Column(
+                      children: [
+                        Image.asset("assets/images/jewelery1.jpg"),
+                        const Text("Jewelery")
+                      ],
+                    )),
                 GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -90,7 +98,12 @@ class HomeScreen extends StatelessWidget {
                         ),
                       );
                     },
-                    child: Image.asset("assets/images/mens_clothing1.jpg")),
+                    child: Column(
+                      children: [
+                        Image.asset("assets/images/mens_clothing1.jpg"),
+                        const Text("Man's clothing")
+                      ],
+                    )),
                 GestureDetector(
                     onTap: () {
                       Navigator.push(
@@ -104,10 +117,15 @@ class HomeScreen extends StatelessWidget {
                         ),
                       );
                     },
-                    child: Image.asset("assets/images/womens_clothing1.jpg")),
+                    child: Column(
+                      children: [
+                        Image.asset("assets/images/womens_clothing1.jpg"),
+                        const Text("Woman's clothing")
+                      ],
+                    )),
               ],
               options: CarouselOptions(
-                height: 150,
+                height: 230,
                 aspectRatio: 16 / 9,
                 viewportFraction: 0.8,
                 initialPage: 0,
@@ -119,7 +137,6 @@ class HomeScreen extends StatelessWidget {
                 autoPlayCurve: Curves.fastOutSlowIn,
                 enlargeCenterPage: true,
                 enlargeFactor: 0.3,
-                //onPageChanged: callbackFunction,
                 scrollDirection: Axis.horizontal,
               ),
             ),

@@ -3,10 +3,10 @@ import 'package:fake_store_api/bloc/bloc/category_bloc.dart';
 import 'package:fake_store_api/constants/app_constants.dart';
 import 'package:fake_store_api/ui/screens/sub_category_screen.dart';
 import 'package:fake_store_api/ui/widgets/category_widget.dart';
-import 'package:flutter/cupertino.dart';
+//import 'package:flutter/cupertino.dart';
 //import 'package:fake_store_api/bloc/bloc/theme_ctrl_bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+//import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomeScreen extends StatelessWidget {

@@ -3,8 +3,10 @@ import 'package:fake_store_api/bloc/bloc/category_bloc.dart';
 import 'package:fake_store_api/constants/app_constants.dart';
 import 'package:fake_store_api/ui/screens/sub_category_screen.dart';
 import 'package:fake_store_api/ui/widgets/category_widget.dart';
+import 'package:flutter/cupertino.dart';
 //import 'package:fake_store_api/bloc/bloc/theme_ctrl_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -47,10 +49,62 @@ class HomeScreen extends StatelessWidget {
             ),
             CarouselSlider(
               items: [
-                Image.asset("assets/images/laptop.jpg"),
-                Image.asset("assets/images/jewelery1.jpg"),
-                Image.asset("assets/images/mens_clothing1.jpg"),
-                Image.asset("assets/images/womens_clothing1.jpg"),
+                GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SubCategoryScreen(
+                            categoryUrl:
+                                "https://fakestoreapi.com/products/category/electronics",
+                            categoryName: "Electronics",
+                          ),
+                        ),
+                      );
+                    },
+                    child: Image.asset("assets/images/laptop.jpg")),
+                GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SubCategoryScreen(
+                            categoryUrl:
+                                "https://fakestoreapi.com/products/category/jewelery",
+                            categoryName: "Jewelery",
+                          ),
+                        ),
+                      );
+                    },
+                    child: Image.asset("assets/images/jewelery1.jpg")),
+                GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SubCategoryScreen(
+                            categoryUrl:
+                                "https://fakestoreapi.com/products/category/men's clothing",
+                            categoryName: "Men's clothing",
+                          ),
+                        ),
+                      );
+                    },
+                    child: Image.asset("assets/images/mens_clothing1.jpg")),
+                GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const SubCategoryScreen(
+                            categoryUrl:
+                                "https://fakestoreapi.com/products/category/women's clothing",
+                            categoryName: "Woman's clothing",
+                          ),
+                        ),
+                      );
+                    },
+                    child: Image.asset("assets/images/womens_clothing1.jpg")),
               ],
               options: CarouselOptions(
                 height: 150,
